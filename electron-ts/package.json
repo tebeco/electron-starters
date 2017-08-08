@@ -1,0 +1,40 @@
+{
+  "name": "electron-ts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.ts",
+  "scripts": {
+    "prestart": "npm run build",
+    "start": "electron ./dist/main.js",
+    "test": "test",
+    "build": "webpack --config webpack.config.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tebeco/electron-starters.git"
+  },
+  "keywords": [
+    "electron",
+    "typescript"
+  ],
+  "author": "TeBeCo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tebeco/electron-starters/issues"
+  },
+  "homepage": "https://github.com/tebeco/electron-starters#readme",
+  "devDependencies": {
+    "electron": "^1.6.11",
+    "electron-builder": "^19.19.1",
+    "ts-loader": "^2.3.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.5.0",
+    "tslint-config-standard": "^6.0.1",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.2",
+    "webpack": "^3.4.1"
+  },
+  "dependencies": {
+    "html-webpack-plugin": "^2.30.1"
+  }
+}
